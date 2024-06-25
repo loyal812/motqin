@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  api:
+    ports:
+      - "5000:5000"
+    image: gluck0101/motqin:latest
+    build:
+      dockerfile: ./src/Dockerfile
+      context: .
+    volumes:
+      - ./src:/home/user/src
